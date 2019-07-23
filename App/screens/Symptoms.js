@@ -93,7 +93,7 @@ class Quiz extends React.Component {
         const answersSub = this.state.answerMap;
 
         fetch(
-          "http://ec2-18-217-238-241.us-east-2.compute.amazonaws.com:3000/questions",
+          "http://ec2-18-191-153-220.us-east-2.compute.amazonaws.com:3000/questions",
           {
             method: "PUT",
             headers: {
@@ -122,7 +122,7 @@ class Quiz extends React.Component {
     try {
       //Assign the promise unresolved first then get the data using the json method.
       const questionsResponse = await fetch(
-        "http://ec2-18-217-238-241.us-east-2.compute.amazonaws.com:3000/questions"
+        "http://ec2-18-191-153-220.us-east-2.compute.amazonaws.com:3000/questions"
       )
         .then(res => res.json())
         .then(responseJSON => {
